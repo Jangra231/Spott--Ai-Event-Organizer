@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["groq"]
+  "cSpell.words": ["autoplay", "groq", "qrcode"],
+  "js/ts.tsdk.path": "node_modules\\typescript\\lib"
 }
