@@ -1,5 +1,4 @@
 import Header from "../components/header.jsx";
-import { ConvexClientProvider } from "./ConvexClientProvider.jsx";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { ClerkProvider } from "@clerk/nextjs";
