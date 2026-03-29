@@ -53,6 +53,7 @@ export default defineSchema({
     address: v.optional(v.string()),
     city: v.string(),
     state: v.optional(v.string()),
+    country: v.string(),
 
     //Capacity & Ticketing
     capacity: v.number(),
@@ -70,7 +71,7 @@ export default defineSchema({
   })
     .index("by_organizer", ["organizerId"])
     .index("by_category", ["category"])
-    .index("by_startDate", ["startDate"])
+    .index("by_start_date", ["startDate"])
     .index("by_slug", ["slug"])
     .searchIndex("search_title", {
       searchField: "title",
@@ -98,6 +99,6 @@ export default defineSchema({
   })
     .index("by_event", ["eventId"])
     .index("by_user", ["userId"])
-    .index("by_event_users", ["eventId", "userId"])
+    .index("by_event_user", ["eventId", "userId"])
     .index("by_qrCode", ["qrCode"]),
 });

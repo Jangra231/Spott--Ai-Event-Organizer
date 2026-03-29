@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
+import { Toaster } from "@/components/ui/sonner.jsx";
 
 export const metadata = {
   title: "Spott",
@@ -45,6 +46,7 @@ export default function RootLayout({ children }) {
                     Made with ❤️ by Spott Team
                   </div>
                 </footer>
+                <Toaster richColors />
               </main>
             </ConvexClientProvider>
           </ClerkProvider>
